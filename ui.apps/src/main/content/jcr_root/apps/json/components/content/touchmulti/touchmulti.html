@@ -1,0 +1,10 @@
+Click here to configure Multi Field User Menu
+<div data-sly-use.multiItems="com.example.json.core.models.UserMultiComponent">
+<div data-sly-list.head="${multiItems.multiFieldItems}">
+<p><b>Value from the Text Field:</b> ${head.title}</p>
+<p><b>Value from the Path Finder:</b> ${head.path}</p>
+<p><b>Selected Tags:</b> ${head.flag}</p>
+<h3>RTE Data</h3>
+${head.text @ context='html'}
+</div>
+</div>
